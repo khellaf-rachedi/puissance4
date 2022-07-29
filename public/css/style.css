@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Jost", sans-serif;
+  /* background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); */
+  background-image: url('../../img/background.jpg');
+  background-size: cover;
+  /* background-color: aqua; */
+}
+
+h1{
+  color: white;
+  text-align: center;
+}
+.main {
+  width: 350px;
+  height: 500px;
+  overflow: hidden;
+  /* border-radius: 10px;
+  box-shadow: 5px 20px 50px #000; */
+}
+#chk {
+  display: none;
+}
+.signup {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+}
+
+::placeholder{
+  text-align: center;
+  font-weight: bold;
+  color: gray;
+}
+
+label {
+  color: white;
+  font-size: 1.4em;
+  justify-content: center;
+  display: flex;
+  margin-top: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+input {
+  width: 70%;
+  height: 25px;
+  background: whitesmoke;
+  justify-content: center;
+  display: flex;
+  margin: 20px auto;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 16px;
+}
+button {
+  width: 78%;
+  height: 40px;
+  margin: 10px auto;
+  justify-content: center;
+  display: block;
+  color: #fff;
+  background: black;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+button:hover {
+  background: cornflowerblue;
+  color:wheat;
+  
+}
+.login {
+  height: 460px;
+  background: lightsteelblue;
+  border-radius: 30% / 11%;
+  transform: translateY(-180px);
+  transition: 0.8s ease-in-out;
+  
+}
+.login label {
+  color: black;
+  transform: scale(0.6);
+}
+
+#chk:checked ~ .login {
+  transform: translateY(-500px);
+}
+#chk:checked ~ .login label {
+  transform: scale(1);
+  padding-top: 1.5rem;
+}
+#chk:checked ~ .signup label {
+  transform: scale(0.6);
+}
